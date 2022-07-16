@@ -9,6 +9,7 @@ DEVICE_PATH := device/xiaomi/light
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+TARGET_SUPPORTS_64_BIT_APPS := false
 
 # Architecture
 TARGET_ARCH := arm64
