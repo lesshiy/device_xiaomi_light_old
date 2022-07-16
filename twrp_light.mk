@@ -13,13 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Inherit from light device
 $(call inherit-product, device/xiaomi/light/device.mk)
 
-# Inherit some common Omni stuff.
+# Inherit some common Twrp stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := light
-PRODUCT_NAME := omni_light
+PRODUCT_NAME := twrp_light
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22041219G
 PRODUCT_MANUFACTURER := xiaomi
