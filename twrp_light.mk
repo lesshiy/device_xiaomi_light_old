@@ -12,7 +12,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/base.mk)
 $(call inherit-product, device/xiaomi/light/device.mk)
 
 # Inherit some common Twrp stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := light
