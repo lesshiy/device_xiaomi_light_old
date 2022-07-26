@@ -8,6 +8,10 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/base.mk)
 
+# Virtual A/B
+ENABLE_VIRTUAL_AB := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 # Inherit from light device
 $(call inherit-product, device/xiaomi/light/device.mk)
 
